@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copy csproj and restore as distinct layers
 COPY ./ ./
-RUN dotnet restore !!!namnet på din solution fil!!!.sln
+RUN dotnet restore !!!Fatigheter.sln!!!.sln
 
 # Copy everything else and build
 RUN dotnet publish -c Release -o out
